@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Exemplo</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 20px;
+		}
+
+		nav {
+			background-color: #f4f4f4;
+			padding: 10px;
+			margin-bottom: 20px;
+		}
+
+		nav ul {
+			list-style-type: none;
+			padding: 0;
+		}
+
+		nav ul li {
+			display: inline;
+			margin-right: 15px;
+		}
+
+		table {
+			width: 100%;
+			border-collapse: collapse;
+			margin-top: 20px;
+		}
+
+		table,
+		th,
+		td {
+			border: 1px solid #ddd;
+		}
+
+		th,
+		td {
+			padding: 8px;
+			text-align: left;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- Menu de navegação -->
+	<nav>
+		<ul>
+			<li><a href="#home" accesskey="h">Início</a></li>
+			<li><a href="#sobre" accesskey="s">Sobre</a></li>
+			<li><a href="#contacto" tabindex="-1" accesskey="c">Contacto</a></li>
+		</ul>
+	</nav>
+
+	<!-- Formulário  -->
+	<h2 id="formulario">Formulário de Contacto</h2>
+	<form action="#" method="POST">
+		<label>Nome:</label>
+		<input type="text" id="nome" name="nome" required>
+
+		<label>E-mail:</label>
+		<input type="email" id="email" name="email" required>
+
+		<label>Mensagem:</label>
+		<textarea id="mensagem" name="mensagem" required></textarea>
+
+		<button type="submit">Enviar</button>
+	</form>
+
+	<!-- Tabela  -->
+	<h2 id="tabela">Tabela de Produtos</h2>
+	<table tabindex="0" summary="Tabela de produtos com preços atualizados">
+		<caption>Tabela 1 - Novos Preços</caption>
+		<summary>Esta tabela apresenta os novos preços praticados, com aumento de 20%</summary>
+		<thead>
+			<tr>
+				<th>ID</th>
+				<th>Produto</th>
+				<th>Preço</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td>Produto A</td>
+				<td>€10.00</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Produto B</td>
+				<td>€20.00</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Produto C</td>
+				<td>€30.00</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td colspan="2">Total:</td>
+				<td>€60.00</td>
+			</tr>
+		</tfoot>
+	</table>
+</body>
+
+</html>
